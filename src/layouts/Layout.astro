@@ -1,0 +1,43 @@
+---
+import Hero from '../../components/Hero.vue';
+import LanguageSelector from '../../components/LanguageSelector.vue';
+import AboutMe from '../../components/AboutMe.vue';
+import Experiencia from '../../components/Experiencia.vue';
+import Educacion from '../../components/Educacion.vue';
+import es from '../i18n/es.json';
+import en from '../i18n/en.json';
+import it from '../i18n/it.json';
+import Contact from '../../components/Contact.vue';
+
+const url = new URL(Astro.url);
+const langCode = (url.searchParams.get('lang') ?? 'es') as 'es' | 'en' | 'it';
+const translations = { es, en, it };
+const lang = translations[langCode] || es;
+
+---
+
+<html lang={langCode}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicolás De Lauretis - Portfolio</title>
+  </head>
+  <body class="bg-[#191716]">
+    <div class="relative">
+      <LanguageSelector langCode={langCode} client:load />
+      <Hero t={lang} key={langCode} client:load />
+    </div>
+    <div class="relative">
+      <AboutMe t={lang} key={langCode} client:load />
+    </div>
+    <div class="relative">
+      <Experiencia t={lang} client:load />
+    </div>
+    <div class="relative">
+      <Educacion t={lang} client:load />
+    </div>
+    <div class="relative">
+      <Contact t={lang} client:load />
+    </div>
+  </body>
+</html>

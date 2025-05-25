@@ -1,0 +1,59 @@
+{
+  "hero": {
+    "title": "Nicolás De Lauretis",
+    "subtitle": "Sviluppatore di database, software e APi",
+    "contact": "Contattami",
+    "cv": "Scarica CV",
+    "about": "Chi sono",
+    "description": "Uno sviluppatore appassionato con oltre 3 anni di esperienza nello sviluppo di database e pagine web. Nel contesto lavorativo, ho acquisito competenze interpersonali chiave come la comunicazione efficace, la risoluzione dei problemi, l'adattabilità e il lavoro di squadra, tutte fondamentali per il successo dei progetti e la gestione dei team. Ho esperienza nello sviluppo di database, applicazioni web e design frontend con uno stile minimalista/moderno.",
+    "me": "Fuori dal codice, mi piace la musica classica ed un buon caffè. Credo che un buon equilibrio tra lavoro e vita personale faccia la differenza.",
+    "xp": "Esperienza lavorativa",
+    "ed": "Istruzione e certificazioni",
+    "experiencia": [
+      {
+        "title": "Esercito argentino - Soldato volontario",
+        "date": "Marzo 2022 - Giugno 2025",
+        "jobDescription": "Durante il mio periodo nell'Esercito argentino, ho acquisito competenze interpersonali chiave come la comunicazione efficace, la risoluzione dei problemi, l'adattabilità e il lavoro di squadra, tutte fondamentali per il successo dei progetti e la gestione dei team.",
+        "techStack": "Ho lavorato con tecnologie come JavaScript, TypeScript, Nuxt, Vue, PHP e Laravel. Ho anche acquisito una solida esperienza in database come MySQL, Microsoft SQL Server e PostgreSQL."
+      }
+    ],
+    "educacion": [
+      {
+        "title": "Università Nazionale di General Sarmiento",
+        "subtitle": "Tecnico universitario in programmazione",
+        "date": "2022 - Presente",
+        "link": "https://www.ungs.edu.ar/",
+        "logo": "https://media.licdn.com/dms/image/v2/D4D0BAQF_tOCxRDakeQ/company-logo_100_100/company-logo_100_100/0/1695838830498/universidad_nacional_de_general_sarmiento_logo?e=1753920000&v=beta&t=hSYf6z_dPg7boM-Mk57CAb5Om5fL_cNmt715zuE4n1M"
+      },
+      {
+        "title": "EF SET English Certificate 67/100",
+        "subtitle": "C1 Avanzato",
+        "date": "2022 - Presente",
+        "link": "https://cert.efset.org/en/i1gdnc",
+        "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQFLraHojJVQhA/company-logo_100_100/company-logo_100_100/0/1728915497369/efset_logo?e=1753920000&v=beta&t=R5lAspQ2Tr29LQe_KxbtZ3o-F_eRVKN2ZEPt9Y8lkvU"
+      },
+      {
+        "title": "First Certificate in English",
+        "subtitle": "B2 First superato con voto B (175)",
+        "date": "2021",
+        "link": "https://www.cambridgeenglish.org/exams-and-tests/first/",
+        "logo": "https://media.licdn.com/dms/image/v2/C4E0BAQF764moHT29Og/company-logo_100_100/company-logo_100_100/0/1650876513245/cambridge_university_press_assessment_english_logo?e=1753920000&v=beta&t=H5wz20T-MEJNxsuqD2zI49EMM-HAx2SC6nLEuHj9eYo"
+      },
+      {
+        "title": "FreeCodeCamp",
+        "subtitle": "Responsive Web Design",
+        "date": "2022",
+        "link": "https://www.freecodecamp.org/certification/fcc3fd02b4f-bc4d-49a3-8e45-cadc951e1074/responsive-web-design",
+        "logo": "https://media.licdn.com/dms/image/v2/C4E0BAQGLKj3JHcof0w/company-logo_100_100/company-logo_100_100/0/1630639684997/free_code_camp_logo?e=1753920000&v=beta&t=SWg2vy4F-kex8y9fSMxljbZz1d95NdAYdfEnCTt27aY"
+      },
+      {
+        "title": "FreeCodeCamp",
+        "subtitle": "Algoritmi e strutture dati JavaScript",
+        "date": "2022",
+        "link": "https://www.freecodecamp.org/certification/fcc3fd02b4f-bc4d-49a3-8e45-cadc951e1074/javascript-algorithms-and-data-structures",
+        "logo": "https://media.licdn.com/dms/image/v2/C4E0BAQGLKj3JHcof0w/company-logo_100_100/company-logo_100_100/0/1630639684997/free_code_camp_logo?e=1753920000&v=beta&t=SWg2vy4F-kex8y9fSMxljbZz1d95NdAYdfEnCTt27aY"
+      }
+    ]
+    
+  }
+}

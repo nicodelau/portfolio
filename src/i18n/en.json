@@ -1,0 +1,53 @@
+{
+  "hero": {
+    "title": "Nicolás De Lauretis",
+    "subtitle": "Software, Database & APi Developer",
+    "contact": "Contact me",
+    "cv": "Download CV",
+    "about": "About me",
+    "description": "A passionate developer with over 3 years of experience in database development and web pages. In the workplace, I have acquired key interpersonal skills such as effective communication, problem-solving, adaptability, and teamwork, all essential for project success and team management. I have experience in database development, web applications, and frontend design with a minimalist/modern style.",
+    "me": "Outside of coding, I enjoy classical music and a good coffee. I believe that a good work-life balance makes the difference.",
+    "xp": "Work Experience",
+    "experiencia" : [
+      {
+        "title": "Argentine Army - Volunteer Soldier",
+        "date": "March 2022 - June 2025",
+        "jobDescription": "During my time in the Argentine Army, I acquired key interpersonal skills such as effective communication, problem-solving, adaptability, and teamwork, all essential for project success and team management.",
+        "techStack" : "I worked with technologies such as JavaScript, TypeScript, Nuxt, Vue, PHP, and Laravel. Also i have adquired strong expertise in databases like MySQL, Microsoft SQL Server, and PostgreSQL."
+      }
+    ],
+    "ed": "Education and Certifications",
+    "educacion" : [
+      {
+        "title": "National University of General Sarmiento",
+        "subtitle": "University Technician in Programming",
+        "date": "2022 - Present"
+      }
+      ,
+      {
+        "title": "EF SET English Certificate 67/100",
+        "subtitle": "C1 Advanced",
+        "date": "2022 - Present",
+        "link": "https://cert.efset.org/en/i1gdnc"
+      },
+      {
+        "title": "First Certificate in English",
+        "subtitle": "B2 First Passed at grade B (175)",
+        "date": "2021",
+        "link": "https://www.cambridgeenglish.org/exams-and-tests/first/"
+      },
+      {
+        "title": "FreeCodeCamp",
+        "subtitle": "Responsive Web Design",
+        "date": "2022",
+        "link": "https://www.freecodecamp.org/certification/fcc3fd02b4f-bc4d-49a3-8e45-cadc951e1074/responsive-web-design"
+      },
+      {
+        "title": "FreeCodeCamp",
+        "subtitle": "JavaScript Algorithms and Data Structures",
+        "date": "2022",
+        "link": "https://www.freecodecamp.org/certification/fcc3fd02b4f-bc4d-49a3-8e45-cadc951e1074/javascript-algorithms-and-data-structures"
+      }
+    ]
+  }
+}
