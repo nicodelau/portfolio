@@ -5,6 +5,7 @@ import AboutMe from '../../components/AboutMe.vue';
 import Experiencia from '../../components/Experiencia.vue';
 import Educacion from '../../components/Educacion.vue';
 import Footer from '../../components/Footer.vue';
+
 import es from '../i18n/es.json';
 import en from '../i18n/en.json';
 import it from '../i18n/it.json';
@@ -14,7 +15,28 @@ const url = new URL(Astro.url);
 const langCode = (url.searchParams.get('lang') ?? 'es') as 'es' | 'en' | 'it';
 const translations = { es, en, it };
 const lang = translations[langCode] || es;
+import { onMounted } from 'vue'
+import Home from '../../components/Home.vue';
 
+onMounted(async () => {
+  const gsap = await import('gsap')
+  const { ScrollTrigger } = await import('gsap/ScrollTrigger')
+  gsap.default.registerPlugin(ScrollTrigger);
+
+  gsap.default.from('.hero', {
+    scrollTrigger: {
+      trigger: '.hero',
+      start: 'top 80%',
+      toggleActions: 'play none none none'
+    },
+    opacity: 0,
+    y: 60,
+    duration: 1,
+    stagger: 0.3,
+    ease: 'power3.out'
+  });
+  
+})
 ---
 
 <html lang={langCode}>
@@ -23,25 +45,30 @@ const lang = translations[langCode] || es;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nicolás De Lauretis - Portfolio</title>
   </head>
-  <body class="bg-[#191716]">
-    <div class="relative">
-      {/* <LanguageSelector langCode={langCode} client:load /> */}
-      <Hero t={lang} key={langCode} client:load />
-    </div>
-    <div class="relative">
-      <AboutMe t={lang} key={langCode} client:load />
-    </div>
-    <div class="relative">
-      <Experiencia t={lang} client:load />
-    </div>
-    <div class="relative">
-      <Educacion t={lang} client:load />
-    </div>
-    {/* <div class="relative">
-      <Contact t={lang} client:load />
-    </div> */}
-    <div class="relative">
-      <Footer t={lang} client:load />
+  <body class="bg-[#191716]" id="smooth-wrapper">
+    <div id="smooth-content" class="relative">
+      <diviv class="relative">
+        {/* <LanguageSelector langCode={langCode} client:load /> */}
+        <Hero t={lang} key={langCode} client:load />
+      </diviv>
+      <div class="relative">
+        <AboutMe t={lang} key={langCode} client:load />
+      </div>
+      <div class="relative">
+        <Experiencia t={lang} client:load />
+      </div>
+      <div class="relative">
+        <Educacion t={lang} client:load />
+      </div>
+      {/* <div class="relative">
+        <Contact t={lang} client:load />
+      </div> */}
+      <div class="relative" id="footer">
+        <Footer t={lang} client:load />
+      </div>
+      <div class="relative">
+        <Home t={lang} client:load />
+      </div>
     </div>
   </body>
 </html>

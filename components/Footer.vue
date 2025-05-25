@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-gray-800 text-white py-4">
+  <footer class="bg-[#3D348B] text-white py-4">
     <div class="container mx-auto text-center">
       <p>&copy; 2025 | Todos los derechos reservados.</p>
       <div class="flex justify-center space-x-4 mt-2">
