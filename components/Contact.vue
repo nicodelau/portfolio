@@ -81,21 +81,14 @@ const form = reactive({
   message: '',
 })
 
-async function handleSubmit() {
+function handleSubmit() {
   loading.value = true;
-    const res = await fetch('https://api.resend.com/emails', {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${import.meta.env.RESEND_API_KEY}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        from: "Portfolio <noreply@tudominio.com>",
-        to: import.meta.env.PUBLIC_GMAIL_USER,
-        subject: `Nuevo mensaje de ${name}`,
-        text: `Email: ${email}\n\n${message}`,
-      }),
-    }).then(res => res.json())
+  fetch('https://api-portfolio.pages.dev/api/contact', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ ...form })
+  })
+    .then(res => res.json())
     .then(data => {
       if (data.ok) {
         Swal.fire({

@@ -4,6 +4,7 @@ import LanguageSelector from '../../components/LanguageSelector.vue';
 import AboutMe from '../../components/AboutMe.vue';
 import Experiencia from '../../components/Experiencia.vue';
 import Educacion from '../../components/Educacion.vue';
+import Footer from '../../components/Footer.vue';
 import es from '../i18n/es.json';
 import en from '../i18n/en.json';
 import it from '../i18n/it.json';
@@ -24,7 +25,7 @@ const lang = translations[langCode] || es;
   </head>
   <body class="bg-[#191716]">
     <div class="relative">
-      <LanguageSelector langCode={langCode} client:load />
+      {/* <LanguageSelector langCode={langCode} client:load /> */}
       <Hero t={lang} key={langCode} client:load />
     </div>
     <div class="relative">
@@ -36,8 +37,11 @@ const lang = translations[langCode] || es;
     <div class="relative">
       <Educacion t={lang} client:load />
     </div>
-    <div class="relative">
+    {/* <div class="relative">
       <Contact t={lang} client:load />
+    </div> */}
+    <div class="relative">
+      <Footer t={lang} client:load />
     </div>
   </body>
 </html>
