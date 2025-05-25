@@ -2,15 +2,12 @@
 import { defineConfig } from 'astro/config'
 import vue from '@astrojs/vue'
 import tailwind from '@astrojs/tailwind'
-
-import node from '@astrojs/node';
+import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
-  output: 'static',
+  output: 'server',
   integrations: [vue(), tailwind()],
 
-  adapter: node({
-    mode: 'standalone',
-  }),
+  adapter: cloudflare(),
 })
